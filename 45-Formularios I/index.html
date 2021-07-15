@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios I</title>
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mx-auto my-3">
+                <h1 class="text-center">Formularios I</h1>
+                <form id="form" class="border border-primary rounded p-4">
+                    <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input id="name" type="text" class="form-control"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input  id="email" type="email" class="form-control">
+                    </div>
+                    <div id="gender">
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="gender" value="male">
+                            <label class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" name="gender" value="female">
+                            <label class="form-check-label">Female</label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input id="terms" type="checkbox" class="form-check-input">
+                        <label class="form-check-label">I accept the terms and conditions </label>
+                    </div>
+                    <button id="button" type="submit" class="btn btn-primary btn-block mt-3 rounded">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
